@@ -83,6 +83,22 @@ namespace Assignment_2_Linq
             //});
             //foreach (var item in result13) Console.WriteLine(item);
             #endregion;
+            #region Set Operators
+            //var result01 = ListGenerator.ProductList?.Select(c => c.Category).Distinct();
+            //foreach (var item in result01 ?? Enumerable.Empty<string>()) Console.WriteLine(item);
+            //var product = ListGenerator.ProductList?.Select(p => p.ProductName?[0]);
+            //var customer = ListGenerator.CustomerList?.Select(c => c.CustomerName?[0]);
+            //var result02 = product.Union(customer);
+            //foreach (var item in result02) Console.WriteLine(item);
+            //var result03 = product.Intersect(customer);
+            //foreach (var item in result03) Console.WriteLine(item);
+            //var result04 = product.Except(customer);
+            //foreach (var item in result04) Console.WriteLine(item);
+            //var result05 = ListGenerator.ProductList?.Select(p => p.ProductName?.Length >= 3 ? p.ProductName.Substring(p.ProductName.Length - 3): p.ProductName)
+            //    .Concat(ListGenerator.CustomerList.Select(c => c.CustomerName?.Length >= 3 ? c.CustomerName.Substring(c.CustomerName.Length - 3): c.CustomerName));
+            //foreach (var item in result05) Console.WriteLine(item);
+
+            #endregion
         }
     }
 }
