@@ -1,4 +1,5 @@
 ﻿using Demo.Data;
+using System.Collections.Generic;
 namespace Assignment_2_Linq
 {
     internal class Program
@@ -135,6 +136,40 @@ namespace Assignment_2_Linq
             //    Console.WriteLine($"Category: {item.Category}");
             //    foreach (var p in item.Products)
             //        Console.WriteLine($"   {p.ProductName} (Stock: {p.UnitsInStock})");
+            //}
+            #endregion
+            #region Grouping Operators
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+            //var result01 = from n in numbers
+            //                   group n by n % 5 into g
+            //                   orderby g.Key
+            //                   select g;
+            //foreach (var item in result01)
+            //{
+            //    Console.WriteLine($"Numbers with remainder of {item.Key} when divided by 5:");
+            //    foreach (var num in item)
+            //    {
+            //        Console.WriteLine(num);
+            //    }
+            //}
+            //string[] arr = File.ReadAllLines("dictionary_english.txt");
+            //var result02 = arr.GroupBy(a => a[0]).OrderBy(a => a.Key);
+            //foreach (var item in result02)
+            //{
+            //    Console.WriteLine($"Words starting with '{item.Key}':");
+            //    foreach (var item1 in item)
+            //    {
+            //        Console.WriteLine(item1);
+            //    }
+            //    Console.WriteLine();
+            //}
+            //string[] Arr = { "from", "salt", "earn", "last", "near", "form" };
+            //var result03 = Arr.Select(w => w.Trim()).GroupBy(w => String.Concat(w.OrderBy(c => c)));
+            //foreach (var group in result03)
+            //{
+            //    foreach (var item in group)
+            //        Console.WriteLine(item);
+            //    Console.WriteLine("....");
             //}
             #endregion
         }
