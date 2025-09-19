@@ -11,6 +11,78 @@ namespace Assignment_2_Linq
             //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             //var result02 = Arr.Where(n=>n>5).Skip(1).FirstOrDefault();
             #endregion
+            #region Aggregate Operators
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = Arr.Count(n => n % 2 != 0);
+            //Console.WriteLine(result);
+            //var result02 = ListGenerator.CustomerList.Select(c => new
+            //{
+            //    c.CustomerID,
+            //    c.CustomerName,
+            //    c.Fax,
+            //    c.Address,
+            //    c.City,
+            //    c.Region,
+            //    c.PostalCode,
+            //    c.Country,
+            //    OrdersCount = c.Orders.Count()
+            //});
+            //foreach (var item in result02) Console.WriteLine(item);
+            //var result03 = ListGenerator.ProductList.GroupBy(c=>c.Category).Select(c =>new
+            //{
+            //   category = c.Key ,
+            //    ProductNumbers = c.Count()
+            //});
+            //foreach (var item in result03) Console.WriteLine(item);
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var sum = Arr.Sum();
+            //Console.WriteLine(sum);
+            //string[] arr = File.ReadAllLines("dictionary_english.txt");
+            //var result04 = arr.Sum(w=>w.Length);
+            //Console.WriteLine(result04);
+            //var result05 = arr.Min(w=>w.Length);
+            //Console.WriteLine(result05);
+            //var result06 = arr.Max(w => w.Length);
+            //Console.WriteLine(result06);
+            //var result07 = arr.Average(w => w.Length);
+            //Console.WriteLine(result06);
+            //var result08 = ListGenerator.ProductList?.GroupBy(c => c.Category).Select(u => new
+            //{
+            //    Category = u.Key,
+            //    TotalStock = u.Sum(p => p.UnitsInStock)
+            //});
+            //var result09 = ListGenerator.ProductList?.GroupBy(c => c.Category).Select(u => new
+            //{
+            //    Category = u.Key,
+            //    TotalStock = u.Min(p => p.UnitPrice)
+            //});
+            //var result10 = from p in ListGenerator.ProductList
+            //               group p by p.Category into g
+            //               let minPrice = g.Min(p => p.UnitPrice)
+            //               from p in g
+            //               where p.UnitPrice == minPrice
+            //               select new { p.Category, p.ProductName, p.UnitPrice };
+            //foreach (var item in result10) Console.WriteLine(item);
+            //var result11 = ListGenerator.ProductList?.GroupBy(p => p.Category).Select(c => new
+            //{
+            //    catrgory=c.Key,
+            //    MaxPrice = c.Max(p => p.UnitPrice)
+            //});
+            //foreach (var item in result11) Console.WriteLine(item);
+            //var result12 = from p in ListGenerator.ProductList
+            //                            group p by p.Category into g
+            //                            let maxPrice = g.Max(p => p.UnitPrice)
+            //                            from p in g
+            //                            where p.UnitPrice == maxPrice
+            //                            select new { p.Category, p.ProductName, p.UnitPrice };
+            //foreach (var item in result12) Console.WriteLine(item);
+            //var result13 = ListGenerator.ProductList?.GroupBy(c => c.Category).Select(p => new
+            //{
+            //    Category = p.Key,
+            //    AveragePrice = p.Average(p => p.UnitPrice)
+            //});
+            //foreach (var item in result13) Console.WriteLine(item);
+            #endregion;
         }
     }
 }
