@@ -112,6 +112,31 @@ namespace Assignment_2_Linq
             //var result05 = numbers.TakeWhile((n, i) => n >= i);
             //foreach (var item in result05) Console.WriteLine(item);
             #endregion
+            #region Quantifiers
+            //string[] arr = File.ReadAllLines("dictionary_english.txt");
+            //bool result01 = arr.Any(w => w.Contains("ei"));
+            //Console.WriteLine(result01);
+            //var result02 = from p in ListGenerator.ProductList
+            //                group p by p.Category into g
+            //                where g.Any(p => p.UnitsInStock == 0)
+            //                select new { Category = g.Key, Products = g };
+            //foreach (var item in result02)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}");
+            //    foreach (var p in item.Products)
+            //        Console.WriteLine($"   {p.ProductName} (Stock: {p.UnitsInStock})");
+            //}
+            //var result03= from p in ListGenerator.ProductList
+            //              group p by p.Category into g
+            //              where g.All(p=>p.UnitsInStock > 0)
+            //              select new { Category = g.Key, Products = g };
+            //foreach (var item in result03)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}");
+            //    foreach (var p in item.Products)
+            //        Console.WriteLine($"   {p.ProductName} (Stock: {p.UnitsInStock})");
+            //}
+            #endregion
         }
     }
 }
