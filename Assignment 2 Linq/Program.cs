@@ -99,6 +99,19 @@ namespace Assignment_2_Linq
             //foreach (var item in result05) Console.WriteLine(item);
 
             #endregion
+            #region Partitioning Operators
+            //var result01 = ListGenerator.CustomerList?.Where(c => c.City == "Washington").SelectMany(o => o.Orders).Take(3);
+            //foreach (var item in result01) Console.WriteLine(item);
+            //var result02 = ListGenerator.CustomerList?.Where(c => c.City == "Washington").SelectMany(o => o.Orders).Skip(2);
+            //foreach (var item in result02) Console.WriteLine(item);
+            //int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result03 = numbers.TakeWhile((n, i) => n >= i);
+            //foreach (var item in result03) Console.WriteLine(item);
+            //var result04 = numbers.SkipWhile(n => n % 3 != 0);
+            //foreach (var item in result04) Console.WriteLine(item);
+            //var result05 = numbers.TakeWhile((n, i) => n >= i);
+            //foreach (var item in result05) Console.WriteLine(item);
+            #endregion
         }
     }
 }
